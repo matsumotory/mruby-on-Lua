@@ -1,1 +1,1 @@
-puts "mruby file exec on Lua!!"
+puts "mruby file run on Lua!!"
