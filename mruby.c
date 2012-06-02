@@ -4,12 +4,7 @@
 
 #include "mruby.h"
 #include "mruby/proc.h"
-#include "mruby/array.h"
-#include "mruby/string.h"
 #include "mruby/compile.h"
-#include "mruby/dump.h"
-#include <stdio.h>
-#include <string.h>
 
 static int l_mruby(lua_State *L)
 {
