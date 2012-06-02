@@ -23,8 +23,11 @@ static int l_mruby(lua_State *L)
     n = mrb_generate_code(mrb, p->tree);
 
     mrb_run(mrb, mrb_proc_new(mrb, mrb->irep[n]), mrb_nil_value());
+
     ret =  n > 0 ? 0 : 1;
     lua_pushnumber(L, ret);
+
+    mrb_close(mrb);
 
     return 1;
 }
