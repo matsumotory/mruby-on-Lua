@@ -1,6 +1,7 @@
 require "mruby"
 
 mruby.run([[
+
 def tak(x, y, z)
 
     if y >= x
@@ -11,5 +12,6 @@ def tak(x, y, z)
 end
 
 print tak(20, 12, 7)
+
 ]])
 
