@@ -3,3 +3,4 @@ Install
 
 Test
     lua sample.lua
+    lua mruby_on.lua
