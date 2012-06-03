@@ -15,7 +15,7 @@ static int l_mruby_code(lua_State *L)
 
     mrb = mrb_open();
 
-    *mrb_code = lua_tostring(L, 1);
+    mrb_code = lua_tostring(L, 1);
 
     p = mrb_parse_string(mrb, mrb_code);
     n = mrb_generate_code(mrb, p->tree);
@@ -36,7 +36,7 @@ static int l_mruby_file(lua_State *L)
     mrb_state *mrb;
     FILE *mrb_file;
     struct mrb_parser_state* p;
-    const char mruby_code_file;
+    const char *mruby_code_file;
 
     mrb = mrb_open();
 
