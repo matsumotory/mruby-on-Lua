@@ -17,7 +17,7 @@ static int l_mruby_code(lua_State *L)
 
     mrb_code = lua_tostring(L, 1);
 
-    p = mrb_parse_string(mrb, mrb_code);
+    p = mrb_parse_string(mrb, mrb_code, NULL);
     n = mrb_generate_code(mrb, p->tree);
 
     mrb_run(mrb, mrb_proc_new(mrb, mrb->irep[n]), mrb_nil_value());
@@ -45,7 +45,7 @@ static int l_mruby_file(lua_State *L)
     if ((mrb_file = fopen(mruby_code_file, "r")) == NULL)
         return -1;
 
-    p = mrb_parse_file(mrb, mrb_file);
+    p = mrb_parse_file(mrb, mrb_file, NULL);
     n = mrb_generate_code(mrb, p->tree);
 
     mrb_run(mrb, mrb_proc_new(mrb, mrb->irep[n]), mrb_nil_value());
