@@ -1,5 +1,5 @@
 * Install
-    make
+        make
 
 * Example
     ```lua
@@ -22,5 +22,5 @@
     ```
 
 * Test
-    lua sample.lua
-    lua mruby_on.lua
+        lua sample.lua
+        lua mruby_on.lua
