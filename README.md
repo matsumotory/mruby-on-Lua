@@ -1,7 +1,9 @@
 * Install
+
         make
 
 * Example
+
     ```lua
     require "mruby"
      
@@ -22,5 +24,6 @@
     ```
 
 * Test
+
         lua sample.lua
         lua mruby_on.lua
