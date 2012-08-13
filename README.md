@@ -37,7 +37,7 @@
     mruby.run("puts 'mruby code run on Lua!!'")
     ```
 
-    ** run
+* Run
 
         lua sample.lua
         lua mruby_on.lua
